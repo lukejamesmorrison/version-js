@@ -4,7 +4,7 @@
  * @link https://semver.org
  */
 class Version {
-
+	
 	/**
 	 * Construct version object.
 	 * @param  {string|object} version This is the user-input version.  

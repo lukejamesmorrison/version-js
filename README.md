@@ -1,17 +1,21 @@
-# Version.js
+# version-js
 A Version class to handle semantic version manipulation in Javascript.
+
+![NPM](https://img.shields.io/npm/l/@lukejm/version-js.svg)
+![npm](https://img.shields.io/npm/dw/@lukejm/version-js.svg)
+![npm (scoped)](https://img.shields.io/npm/v/@lukejm/version-js.svg)
 
 
 ## Data Types
 
-A `Version` object can be instantiated by either a Semantic Version string or an object with preformatted properties resembling a semantic version object.
+A `Version` object can be instantiated with either a Semantic Version string or an object with preformatted properties resembling a semantic version object.
 
 ### String
 ```javascript
 let string = '3.2.1-beta.release+meta.data'
 ```
 
-The formatted string must follow conventions outlined in [Semantic Version 2.0.0](https://semver.org).
+The formatted string must follow conventions outlined in [the Semantic Version documentation](https://semver.org).
 
 ### Object
 ```javascript
@@ -24,7 +28,7 @@ let object = {
 }
 ```
 
-The basic version object must follow the above format.
+The basic version object must follow the above format. Pre-release and metadata items should be set in an array.
 
 ## Usage
 
@@ -98,7 +102,7 @@ All modifiers accept either a `string` or `integer` representation of a number.
 
 ### Comparison
 
-A `Version` object may be compared to another to determine if it is newer/older/equal to.
+A `Version` object may be compared to another.
 
 Assuming a second `version2` object:
 
@@ -115,32 +119,27 @@ let version2 = new Version({
 We can determine if `version` is greater than `version2`:
 
 ```javascript
-version.isGreaterThan(version2);
-//	False (3.2.1 << 5.4.3)
+version.isGreaterThan(version2);    //	False (3.2.1 << 5.4.3)
 ```
 
 Or less than:
 ```javascript
-version.isLessThan(version2);
-//	True (3.2.1 << 5.4.3)
+version.isLessThan(version2);   //	True (3.2.1 << 5.4.3)
 ```
 
 Or Equal To:
 ```javascript
-version.isEqualTo(version2, precise = false);
-//	False (3.2.1 != 5.4.3)
+version.isEqualTo(version2, precise = false);   //	False (3.2.1 != 5.4.3)
 ```
 
 Or Less Than or Equal To:
 ```javascript
-version.isEqualOrLessThan(version2, precise = false);
-//  True (3.2.1 << 5.4.3)
+version.isEqualOrLessThan(version2, precise = false);   //  True (3.2.1 << 5.4.3)
 ```
 
 Or Greater Than or Equal To:
 ```javascript
-version.isEqualOrGreaterThan(version2, precise = false);
-//  False (3.2.1 << 5.4.3)
+version.isEqualOrGreaterThan(version2, precise = false);    //  False (3.2.1 << 5.4.3)
 ```
 
 **Note**: `isEqualTo()`, `isEqualOrLessThan()` and `isEqualOrGreaterThan()` accept an optional second parameter `precise` which tells it to do a precise match when compared for equality.  If `precise = false` (default) then the version will only be compared by Major, Minor and Patch values.  If `precise = true`, the pre-release and metadata will also be evaluated (This would be considered a **perfect** match).
