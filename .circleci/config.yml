@@ -1,8 +1,10 @@
-version: 2
-jobs:
- build:
-   docker:
-     - image: circleci/ruby:2.4.1s
-   steps:
-     - checkout
-     - run: echo "A first hello"
+version: 
+2jobs:  
+  build:    
+    docker:      
+      - image: circleci/node:7.10-browsers        
+    environment:          CHROME_BIN: "/usr/bin/google-chrome"    
+    steps:      
+      - checkout      
+      - run: npm install      
+      - run: npm test

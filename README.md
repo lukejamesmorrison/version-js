@@ -4,6 +4,7 @@ A Version class to handle semantic version manipulation in Javascript.
 ![NPM](https://img.shields.io/npm/l/@lukejm/version-js.svg)
 ![npm](https://img.shields.io/npm/dw/@lukejm/version-js.svg)
 ![npm (scoped)](https://img.shields.io/npm/v/@lukejm/version-js.svg)
+[![CircleCI](https://circleci.com/gh/lukejamesmorrison/version-js/tree/master.svg?style=svg)](https://circleci.com/gh/lukejamesmorrison/version-js/tree/master)
 
 
 ## Data Types
