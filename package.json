@@ -1,0 +1,33 @@
+{
+  "name": "@lukejm/version-js",
+  "version": "1.0.0",
+  "description": "Manipulate and compare semantic versions in Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukejamesmorrison/version-js.git"
+  },
+  "keywords": [
+    "version"
+  ],
+  "author": "Luke Morrison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukejamesmorrison/version-js/issues"
+  },
+  "homepage": "https://github.com/lukejamesmorrison/version-js#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.5.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.8.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
