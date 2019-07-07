@@ -1,11 +1,20 @@
-version: 2
-jobs:  
-  build:    
-    docker:      
-      - image: circleci/node:7.10-browsers        
-    environment:          
-      CHROME_BIN: "/usr/bin/google-chrome"    
-    steps:      
-      - checkout      
-      - run: npm install      
-      - run: npm test
+version: 2.1
+jobs:
+    # pre-built images: https://circleci.com/docs/2.0/circleci-images/
+    build:    
+        docker:      
+            - image: circleci/node:10-browsers        
+        environment:          
+            CHROME_BIN: "/usr/bin/google-chrome"    
+        steps:
+            - checkout
+            - run: 
+                name: Install NPM Dependencies
+                command: |
+                    echo 'Installing dependencies'
+                    npm install
+            - run: 
+                name: Run NPM Tests
+                command: |
+                    echo 'Running tests'
+                    npm test
