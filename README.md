@@ -2,9 +2,25 @@
 A Version class to handle semantic version manipulation in Javascript.
 
 ![NPM](https://img.shields.io/npm/l/@lukejm/version-js.svg)
-![npm](https://img.shields.io/npm/dw/@lukejm/version-js.svg)
+<!-- ![npm](https://img.shields.io/npm/dw/@lukejm/version-js.svg) -->
 ![npm (scoped)](https://img.shields.io/npm/v/@lukejm/version-js.svg)
-[![CircleCI](https://circleci.com/gh/lukejamesmorrison/version-js/tree/master.svg?style=svg)](https://circleci.com/gh/lukejamesmorrison/version-js/tree/master)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@lukejm/version-js.svg?label=minified%20size)
+<!-- [![CircleCI](https://circleci.com/gh/lukejamesmorrison/version-js/tree/master.svg?style=svg)](https://circleci.com/gh/lukejamesmorrison/version-js/tree/master) -->
+![CircleCI](https://img.shields.io/circleci/build/github/lukejamesmorrison/version-js/master.svg?token=1a15027984edabea745cbe4b3fb63de0c8ed48eb)
+
+## Installation
+
+To install run: 
+
+```
+npm install @lukejm/version-js
+```
+
+And import by adding:
+
+```javascript
+import Version from 'Version';
+```
 
 
 ## Data Types
@@ -16,7 +32,7 @@ A `Version` object can be instantiated with either a Semantic Version string or 
 let string = '3.2.1-beta.release+meta.data'
 ```
 
-The formatted string must follow conventions outlined in [the Semantic Version documentation](https://semver.org).
+The formatted string must follow conventions outlined in [the Semantic Version documentation](https://semver.org). It may be preceeded by the character `v` which will be omitted when parsed.
 
 ### Object
 ```javascript
