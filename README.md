@@ -1,11 +1,9 @@
 # version-js
-A Version class to handle semantic version manipulation in Javascript.
+**A Version class to handle semantic version manipulation in Javascript.**
 
 ![NPM](https://img.shields.io/npm/l/@lukejm/version-js.svg)
-<!-- ![npm](https://img.shields.io/npm/dw/@lukejm/version-js.svg) -->
 ![npm (scoped)](https://img.shields.io/npm/v/@lukejm/version-js.svg)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@lukejm/version-js.svg?label=minified%20size)
-<!-- [![CircleCI](https://circleci.com/gh/lukejamesmorrison/version-js/tree/master.svg?style=svg)](https://circleci.com/gh/lukejamesmorrison/version-js/tree/master) -->
 ![CircleCI](https://img.shields.io/circleci/build/github/lukejamesmorrison/version-js/master.svg?token=1a15027984edabea745cbe4b3fb63de0c8ed48eb)
 
 ## Installation
@@ -71,23 +69,23 @@ let version = new Version({
 
 ### Modification
 
-As of now, a Version object's version levels can be modified like the following:
+As of now, a `Version` object's version *levels* can be modified like the following:
 
-#### Add version level
+**Add version level**
 
 ```javascript
 version.addMajor();
 // version.major = 3+1 = 4
 ```
 
-#### Subtract version level
+**Subtract version level**
 
 ```javascript
 version.subMajor();
 // version.major = 3-1 = 2
 ```
 
-#### Set version level
+**Set version level**
 
 ```javascript
 version.setMajor(10);
@@ -115,7 +113,7 @@ subPatch(value = 1); // Subtract from Patch version
 setPatch(); // Set Patch version
 ```
 
-All modifiers accept either a `string` or `integer` representation of a number.
+All modifiers accept either a `string` or `integer` representation of a positive integer.
 
 ### Comparison
 
@@ -133,30 +131,34 @@ let version2 = new Version({
 });
 ```
 
-We can determine if `version` is greater than `version2`:
+We can determine if `version` is **greater than** `version2`:
 
 ```javascript
 version.isGreaterThan(version2);    //	False (3.2.1 << 5.4.3)
 ```
 
-Or less than:
+Or **less than**:
 ```javascript
 version.isLessThan(version2);   //	True (3.2.1 << 5.4.3)
 ```
 
-Or Equal To:
+Or **equal to**:
 ```javascript
 version.isEqualTo(version2, precise = false);   //	False (3.2.1 != 5.4.3)
 ```
 
-Or Less Than or Equal To:
+Or **less than *or* equal to**:
 ```javascript
 version.isEqualOrLessThan(version2, precise = false);   //  True (3.2.1 << 5.4.3)
 ```
 
-Or Greater Than or Equal To:
+Or **greater than *or* equal to**:
 ```javascript
 version.isEqualOrGreaterThan(version2, precise = false);    //  False (3.2.1 << 5.4.3)
 ```
 
 **Note**: `isEqualTo()`, `isEqualOrLessThan()` and `isEqualOrGreaterThan()` accept an optional second parameter `precise` which tells it to do a precise match when compared for equality.  If `precise = false` (default) then the version will only be compared by Major, Minor and Patch values.  If `precise = true`, the pre-release and metadata will also be evaluated (This would be considered a **perfect** match).
+
+## License
+
+The `version-js` package is open-source software under the [MIT License](https://opensource.org/licenses/MIT).
