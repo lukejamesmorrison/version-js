@@ -3,7 +3,8 @@
 
 ![NPM](https://img.shields.io/npm/l/@lukejm/version-js.svg)
 ![npm (scoped)](https://img.shields.io/npm/v/@lukejm/version-js.svg)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@lukejm/version-js.svg?label=minified%20size)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lukejamesmorrison/version-js.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![CircleCI](https://img.shields.io/circleci/build/github/lukejamesmorrison/version-js/master.svg?token=1a15027984edabea745cbe4b3fb63de0c8ed48eb)
 
 ## Installation
