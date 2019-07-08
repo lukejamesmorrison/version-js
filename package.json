@@ -1,6 +1,6 @@
 {
   "name": "version-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Manipulate and compare semantic versions in Javascript.",
   "main": "dist/index.js",
   "scripts": {
