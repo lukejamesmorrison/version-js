@@ -1,5 +1,5 @@
 # version-js
-**A Version class to handle semantic version manipulation in Javascript.**
+**A lightweight version class to handle semantic version manipulation in Javascript.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![npm (scoped)](https://img.shields.io/npm/v/version-js.svg)
