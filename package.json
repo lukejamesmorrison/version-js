@@ -1,10 +1,11 @@
 {
-  "name": "@lukejm/version-js",
+  "name": "version-js",
   "version": "1.0.1",
   "description": "Manipulate and compare semantic versions in Javascript.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,15 @@
     "url": "https://github.com/lukejamesmorrison/version-js/issues"
   },
   "homepage": "https://github.com/lukejamesmorrison/version-js#readme",
-  "dependencies": {
-    "jest": "^24.8.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.0",
-    "babel-jest": "^24.8.0"
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "jest": "^24.8.0"
   },
   "files": [
     "dist/**/*"

@@ -3,7 +3,7 @@
  *
  * @link https://semver.org
  */
-class Version {
+export default class Version {
 	
 	/**
 	 * Construct version object.
@@ -335,5 +335,3 @@ class Version {
  * @type {RegExp}
  */
 let versionMatchString = /^(?:[a-zA-Z])?(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(-(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*)?(\+[0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*)?$/mi;
-
-export default Version;

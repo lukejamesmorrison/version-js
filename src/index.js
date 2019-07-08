@@ -1,3 +1,3 @@
-import Version from 'Version.js';
+import Version from './Version.js';
 
-export Version;
+export default Version;
