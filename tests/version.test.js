@@ -1,4 +1,4 @@
-import Version from '../Version.js';
+import Version from '../src/Version.js';
 
 let testString = '3.2.1-prerelease.beta+metadata.otherdata';
 let testStringWithVersionPrefix = 'v3.2.1-prerelease.beta+metadata.otherdata';
