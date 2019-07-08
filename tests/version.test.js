@@ -20,8 +20,8 @@ let testObject3 = {
 	major: '3',
 	minor: '2',
 	patch: '1',
-	prerelease: [],
-	metadata: []
+	prerelease: null,
+	metadata: null
 };
 
 

@@ -2,7 +2,7 @@
 **A Version class to handle semantic version manipulation in Javascript.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-![npm (scoped)](https://img.shields.io/npm/v/@lukejm/version-js.svg)
+![npm (scoped)](https://img.shields.io/npm/v/version-js.svg)
 ![CircleCI](https://img.shields.io/circleci/build/github/lukejamesmorrison/version-js/master.svg?token=1a15027984edabea745cbe4b3fb63de0c8ed48eb)
 
 ## Installation
@@ -10,13 +10,13 @@
 To install run: 
 
 ```
-npm install @lukejm/version-js
+npm install version-js
 ```
 
 And import by adding:
 
 ```javascript
-import Version from 'Version';
+import Version from 'version-js';
 ```
 
 
